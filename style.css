@@ -547,8 +547,7 @@ footer {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        padding: 1% 10% 1% 10%;
-        width: 30%;
+        width: 35%;
         height: 35%;
     }
 }
