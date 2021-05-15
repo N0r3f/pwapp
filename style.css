@@ -1,0 +1,694 @@
+body {
+    height: 97%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-align: space-between;
+    -ms-flex-align: space-between;
+    align-items: space-between;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: silver;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+}
+
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: auto;
+    height: 3em;
+    padding-left: 10%;
+    background-color: rgb(65, 63, 63);
+    -webkit-box-shadow: 2px 5px 2px 1px rgba(68, 68, 68, 0.3);
+    box-shadow: 2px 5px 2px 1px rgba(68, 68, 68, 0.3);
+    opacity: 70%;
+    -webkit-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+    transition: 0.4s ease;
+    z-index: 1;
+}
+
+span.dessus {
+    font-size: 2em;
+    color: white;
+    z-index: 2;
+}
+
+span.dessous {
+    position: absolute;
+    font-size: 2.04em;
+    color: rgb(58, 57, 57);
+    opacity: 50%;
+    z-index: 1;
+}
+
+main#container {
+    height: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: space-around;
+    -ms-flex-align: space-around;
+    align-items: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    background: -o-radial-gradient(top, ellipse, #4d9f0c, transparent), -o-radial-gradient(bottom, ellipse, #e66465, transparent);
+    background: radial-gradient(ellipse at top, #4d9f0c, transparent), radial-gradient(ellipse at bottom, #e66465, transparent);
+    opacity: 95%;
+    -webkit-animation: 135s ease main infinite;
+    animation: 135s ease main infinite;
+}
+
+a {
+    color: rgb(51, 26, 97);
+    text-decoration: none;
+    width: 10%;
+    height: auto;
+}
+
+.item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 14%;
+    height: auto;
+    font-size: 1.3em;
+    text-align: center;
+    color: rgb(51, 26, 97);
+    padding: 3% 2% 3% 2%;
+    margin: 1.5%;
+    -webkit-box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, .2);
+    box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, .2);
+    border: 1px solid black;
+    border-radius: 1%;
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+    opacity: 95%;
+    z-index: 1;
+}
+
+.item:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .3);
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .3);
+    -webkit-filter: hue-rotate(180deg);
+    filter: hue-rotate(180deg);
+    opacity: 100%;
+    z-index: 2;
+}
+
+.item:first-child:before {
+    content: url(img/home.png);
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:first-child {
+    background-color: #FEFFFE;
+    -webkit-animation: 15s ease-in-out item1 infinite;
+    animation: 15s ease-in-out item1 infinite;
+}
+
+.item:first-child:after {
+    content: "Logement";
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:nth-child(2):before {
+    content: url(img/sante.png);
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:nth-child(2) {
+    background-color: #E9EBF8;
+    -webkit-animation: 15s ease-in-out item2 infinite;
+    animation: 15s ease-in-out item2 infinite;
+}
+
+.item:nth-child(2):after {
+    content: "Se soigner";
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:nth-child(3):before {
+    content: url(img/fetes.png);
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:nth-child(3) {
+    background-color: #CFD2DF;
+    -webkit-animation: 15s ease-in-out item1 infinite;
+    animation: 15s ease-in-out item1 infinite;
+}
+
+.item:nth-child(3):after {
+    content: "S'amuser";
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:nth-child(4):before {
+    content: url(img/sports.png);
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:nth-child(4) {
+    background-color: #C2C5D2;
+    -webkit-animation: 15s ease-in-out item2 infinite;
+    animation: 15s ease-in-out item2 infinite;
+}
+
+.item:nth-child(4):after {
+    content: "Faire du sport";
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:nth-child(5):before {
+    content: url(img/lire.png);
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:nth-child(5) {
+    background-color: #B4B8C5;
+    -webkit-animation: 15s ease-in-out item1 infinite;
+    animation: 15s ease-in-out item1 infinite;
+}
+
+.item:nth-child(5):after {
+    content: "Lire et apprendre";
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:nth-child(6):before {
+    content: url(img/jouer.png);
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:nth-child(6) {
+    background-color: #A5A299;
+    -webkit-animation: 15s ease-in-out item2 infinite;
+    animation: 15s ease-in-out item2 infinite;
+}
+
+.item:nth-child(6):after {
+    content: "Jeux et loisirs";
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:nth-child(7):before {
+    content: url(img/jardiner.png);
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:nth-child(7) {
+    background-color: #9F9A96;
+    -webkit-animation: 15s ease-in-out item1 infinite;
+    animation: 15s ease-in-out item1 infinite;
+}
+
+.item:nth-child(7):after {
+    content: "Jardiner";
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:nth-child(8):before {
+    content: url(img/construire.png);
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:nth-child(8) {
+    background-color: #999293;
+    -webkit-animation: 15s ease-in-out item2 infinite;
+    animation: 15s ease-in-out item2 infinite;
+}
+
+.item:nth-child(8):after {
+    content: "Faire soi-même";
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:nth-child(9):before {
+    content: url(img/shopping.png);
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:nth-child(9) {
+    background-color: #938A90;
+    -webkit-animation: 15s ease-in-out item1 infinite;
+    animation: 15s ease-in-out item1 infinite;
+}
+
+.item:nth-child(9):after {
+    content: "Faire du shopping";
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:nth-child(10):before {
+    content: url(img/jobs.png);
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:nth-child(10) {
+    background-color: #8D818C;
+    -webkit-animation: 15s ease-in-out item2 infinite;
+    animation: 15s ease-in-out item2 infinite;
+}
+
+.item:nth-child(10):after {
+    content: "Trouver un job";
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:nth-child(11):before {
+    content: url(img/crush.png);
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:nth-child(11) {
+    background-color: #887586;
+    -webkit-animation: 15s ease-in-out item1 infinite;
+    animation: 15s ease-in-out item1 infinite;
+}
+
+.item:nth-child(11):after {
+    content: "Faire des rencontres";
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:nth-child(12):before {
+    content: url(img/voyages.png);
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:nth-child(12) {
+    background-color: #9b7598;
+    -webkit-animation: 15s ease-in-out item2 infinite;
+    animation: 15s ease-in-out item2 infinite;
+}
+
+.item:nth-child(12):after {
+    content: "Voyager";
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+footer {
+    height: 3em;
+    background-color: rgb(70, 69, 69);
+    opacity: 70%;
+    z-index: 1;
+}
+
+@media screen and (max-width: 850px) {
+    header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: auto;
+        height: 3em;
+        font-size: 0.7em;
+        padding-left: 10%;
+        background-color: rgb(65, 63, 63);
+        -webkit-box-shadow: 2px 5px 2px 1px rgba(68, 68, 68, 0.3);
+        box-shadow: 2px 5px 2px 1px rgba(68, 68, 68, 0.3);
+        opacity: 70%;
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+        z-index: 1;
+    }
+    header:hover {
+        font-size: 0.7em;
+        background-color: rgb(65, 63, 63);
+        -webkit-box-shadow: 2px 8px 2px 1px rgba(68, 68, 68, 0.3);
+        box-shadow: 2px 8px 2px 1px rgba(68, 68, 68, 0.3);
+        opacity: 70%;
+        z-index: 2;
+    }
+    .item {
+        position: relative;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 25%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: auto;
+        height: 3em;
+        font-size: 0.5em;
+        padding-left: 10%;
+        background-color: rgb(65, 63, 63);
+        -webkit-box-shadow: 2px 5px 2px 1px rgba(68, 68, 68, 0.3);
+        box-shadow: 2px 5px 2px 1px rgba(68, 68, 68, 0.3);
+        opacity: 70%;
+        -webkit-transition: 0.4s ease;
+        -o-transition: 0.4s ease;
+        transition: 0.4s ease;
+        z-index: 1;
+    }
+    header:hover {
+        font-size: 0.7em;
+        background-color: rgb(65, 63, 63);
+        -webkit-box-shadow: 2px 8px 2px 1px rgba(68, 68, 68, 0.3);
+        box-shadow: 2px 8px 2px 1px rgba(68, 68, 68, 0.3);
+        opacity: 70%;
+        z-index: 2;
+    }
+    .item {
+        position: relative;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 50%;
+        height: auto;
+    }
+}
+
+@-webkit-keyframes main {
+    0% {
+        background: radial-gradient(ellipse at top, #E9EBF8, transparent), radial-gradient(ellipse at bottom, #8D818C, transparent);
+    }
+    15% {
+        background: radial-gradient(ellipse at top, #E9EBF8, transparent), radial-gradient(ellipse at bottom, #938A90, transparent);
+    }
+    25% {
+        background: radial-gradient(ellipse at top, #FEFFFE, transparent), radial-gradient(ellipse at bottom, #999293, transparent);
+    }
+    35% {
+        background: radial-gradient(ellipse at top, #E9EBF8, transparent), radial-gradient(ellipse at bottom, #9F9A96, transparent);
+    }
+    50% {
+        background: radial-gradient(ellipse at top, #E9EBF8, transparent), radial-gradient(ellipse at bottom, #9F9A96, transparent);
+    }
+    65% {
+        background: radial-gradient(ellipse at top, #FEFFFE, transparent), radial-gradient(ellipse at bottom, #9F9A96, transparent);
+    }
+    75% {
+        background: radial-gradient(ellipse at top, #E9EBF8, transparent), radial-gradient(ellipse at bottom, #999293, transparent);
+    }
+    85% {
+        background: radial-gradient(ellipse at top, #E9EBF8, transparent), radial-gradient(ellipse at bottom, #938A90, transparent);
+    }
+    100% {
+        background: radial-gradient(ellipse at top, #E9EBF8, transparent), radial-gradient(ellipse at bottom, #8D818C, transparent);
+    }
+}
+
+@keyframes main {
+    0% {
+        background: -o-radial-gradient(top, ellipse, #E9EBF8, transparent), -o-radial-gradient(bottom, ellipse, #8D818C, transparent);
+        background: radial-gradient(ellipse at top, #E9EBF8, transparent), radial-gradient(ellipse at bottom, #8D818C, transparent);
+    }
+    15% {
+        background: -o-radial-gradient(top, ellipse, #E9EBF8, transparent), -o-radial-gradient(bottom, ellipse, #938A90, transparent);
+        background: radial-gradient(ellipse at top, #E9EBF8, transparent), radial-gradient(ellipse at bottom, #938A90, transparent);
+    }
+    25% {
+        background: -o-radial-gradient(top, ellipse, #FEFFFE, transparent), -o-radial-gradient(bottom, ellipse, #999293, transparent);
+        background: radial-gradient(ellipse at top, #FEFFFE, transparent), radial-gradient(ellipse at bottom, #999293, transparent);
+    }
+    35% {
+        background: -o-radial-gradient(top, ellipse, #E9EBF8, transparent), -o-radial-gradient(bottom, ellipse, #9F9A96, transparent);
+        background: radial-gradient(ellipse at top, #E9EBF8, transparent), radial-gradient(ellipse at bottom, #9F9A96, transparent);
+    }
+    50% {
+        background: -o-radial-gradient(top, ellipse, #E9EBF8, transparent), -o-radial-gradient(bottom, ellipse, #9F9A96, transparent);
+        background: radial-gradient(ellipse at top, #E9EBF8, transparent), radial-gradient(ellipse at bottom, #9F9A96, transparent);
+    }
+    65% {
+        background: -o-radial-gradient(top, ellipse, #FEFFFE, transparent), -o-radial-gradient(bottom, ellipse, #9F9A96, transparent);
+        background: radial-gradient(ellipse at top, #FEFFFE, transparent), radial-gradient(ellipse at bottom, #9F9A96, transparent);
+    }
+    75% {
+        background: -o-radial-gradient(top, ellipse, #E9EBF8, transparent), -o-radial-gradient(bottom, ellipse, #999293, transparent);
+        background: radial-gradient(ellipse at top, #E9EBF8, transparent), radial-gradient(ellipse at bottom, #999293, transparent);
+    }
+    85% {
+        background: -o-radial-gradient(top, ellipse, #E9EBF8, transparent), -o-radial-gradient(bottom, ellipse, #938A90, transparent);
+        background: radial-gradient(ellipse at top, #E9EBF8, transparent), radial-gradient(ellipse at bottom, #938A90, transparent);
+    }
+    100% {
+        background: -o-radial-gradient(top, ellipse, #E9EBF8, transparent), -o-radial-gradient(bottom, ellipse, #8D818C, transparent);
+        background: radial-gradient(ellipse at top, #E9EBF8, transparent), radial-gradient(ellipse at bottom, #8D818C, transparent);
+    }
+}
+
+@-webkit-keyframes item1 {
+    from {
+        background-color: #887586;
+    }
+    25% {
+        background-color: #938A90;
+    }
+    50% {
+        background-color: #887586;
+    }
+    75% {
+        background-color: #938A90;
+    }
+    to {
+        background-color: #887586;
+    }
+}
+
+@keyframes item1 {
+    from {
+        background-color: #887586;
+    }
+    25% {
+        background-color: #938A90;
+    }
+    50% {
+        background-color: #887586;
+    }
+    75% {
+        background-color: #938A90;
+    }
+    to {
+        background-color: #887586;
+    }
+}
+
+@-webkit-keyframes item2 {
+    from {
+        background-color: #887586;
+    }
+    25% {
+        background-color: #938A90;
+    }
+    50% {
+        background-color: #887586;
+    }
+    75% {
+        background-color: #938A90;
+    }
+    to {
+        background-color: #887586;
+    }
+}
+
+@keyframes item2 {
+    from {
+        background-color: #887586;
+    }
+    25% {
+        background-color: #938A90;
+    }
+    50% {
+        background-color: #887586;
+    }
+    75% {
+        background-color: #938A90;
+    }
+    to {
+        background-color: #887586;
+    }
+}
