@@ -548,7 +548,7 @@ footer {
         -ms-flex-pack: center;
         justify-content: center;
         width: 35%;
-        height: 35%;
+        height: auto;
     }
 }
 
