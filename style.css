@@ -524,7 +524,7 @@ main#categories {
 }
 
 .item_cat:first-child:after {
-    content: "MOCO interne";
+    content: "Sur le territoire";
     position: relative;
     left: 0;
     top: 0;
@@ -540,7 +540,7 @@ main#categories {
 }
 
 .item_cat:nth-child(2):after {
-    content: "MOCO interne";
+    content: "Sur le territoire";
     position: relative;
     left: 0;
     top: 0;
@@ -556,7 +556,7 @@ main#categories {
 }
 
 .item_cat:nth-child(3):after {
-    content: "MOCO interne";
+    content: "Sur le territoire";
     position: relative;
     left: 0;
     top: 0;
@@ -572,7 +572,7 @@ main#categories {
 }
 
 .item_cat:nth-child(4):after {
-    content: "MOCO externe";
+    content: "En dehors du territoire";
     position: relative;
     left: 0;
     top: 0;
@@ -626,8 +626,8 @@ main#pages {
     animation: 135s ease main infinite;
 }
 
-h2.titre1:before {
-    content: "MOCO interne";
+h2.titre:first-child:before {
+    content: "Sur le territoire";
     position: relative;
     left: 0;
     top: 0;
@@ -639,8 +639,8 @@ h2.titre1:before {
     z-index: 2;
 }
 
-h2.titre2:before {
-    content: "MOCO interne";
+h2.titre:nth-child(2):before {
+    content: "Sur le territoire";
     position: relative;
     left: 0;
     top: 0;
@@ -652,8 +652,8 @@ h2.titre2:before {
     z-index: 2;
 }
 
-h2.titre3:before {
-    content: "MOCO interne";
+h2.titre:nth-child(3):before {
+    content: "Sur le territoire";
     position: relative;
     left: 0;
     top: 0;
@@ -665,8 +665,8 @@ h2.titre3:before {
     z-index: 2;
 }
 
-h2.titre4:before {
-    content: "MOCO externe";
+h2.titre::nth-child(4):before {
+    content: "En dehors du territoire";
     position: relative;
     left: 0;
     top: 0;
@@ -678,8 +678,21 @@ h2.titre4:before {
     z-index: 2;
 }
 
-h2.titre5:before {
+h2.titre:nth-child(5):before {
     content: "Proposition en ligne";
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8em;
+    color: rgb(48, 48, 48);
+    z-index: 2;
+}
+
+h2.titre:nth-child(6):before {
+    content: "Contacts";
     position: relative;
     left: 0;
     top: 0;
@@ -707,17 +720,8 @@ span.bonasavoir:before {
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolorem eligendi facere laudantium voluptatum tenetur assumenda accusantium voluptatibus, sit similique delectus dignissimos excepturi. Rerum, magni nostrum! Ea ipsum ipsa reiciendis!";
 }
 
-h2.contact:before {
-    content: "CONTACTS";
-    position: relative;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    font-size: 0.8em;
-    color: rgb(48, 48, 48);
-    z-index: 2;
+span.contact_text:before {
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolorem eligendi facere laudantium voluptatum tenetur assumenda accusantium voluptatibus, sit similique delectus dignissimos excepturi. Rerum, magni nostrum! Ea ipsum ipsa reiciendis!";
 }
 
 div#contact {
