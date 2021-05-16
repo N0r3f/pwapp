@@ -41,19 +41,27 @@ header {
     z-index: 1;
 }
 
-span.dessus {
-    font-size: 2em;
+h1.header:before {
+    content: "L'app";
+    position: absolute;
+    top: 0.5%;
+    font-size: 0.8em;
     color: white;
     z-index: 2;
 }
 
-span.dessous {
-    position: absolute;
-    font-size: 2.04em;
-    color: rgb(58, 57, 57);
-    opacity: 50%;
+footer {
+    align-self: space-between;
+    height: 3.2em;
+    background-color: rgb(70, 69, 69);
+    opacity: 70%;
     z-index: 1;
 }
+
+
+/*********************************************************************
+***************************** HOME ***********************************
+**********************************************************************/
 
 main#container {
     height: 70%;
@@ -166,7 +174,7 @@ a {
 .item:nth-child(2) {
     background-color: #E9EBF8;
     -webkit-animation: 15s ease-in-out item2 infinite;
-    animation: 15s ease-in-out item2 infinite;
+    animation: 15s ease-in-out item1 infinite;
 }
 
 .item:nth-child(2):after {
@@ -217,8 +225,8 @@ a {
 
 .item:nth-child(4) {
     background-color: #C2C5D2;
-    -webkit-animation: 15s ease-in-out item2 infinite;
-    animation: 15s ease-in-out item2 infinite;
+    -webkit-animation: 15s ease-in-out item1 infinite;
+    animation: 15s ease-in-out item1 infinite;
 }
 
 .item:nth-child(4):after {
@@ -269,8 +277,8 @@ a {
 
 .item:nth-child(6) {
     background-color: #A5A299;
-    -webkit-animation: 15s ease-in-out item2 infinite;
-    animation: 15s ease-in-out item2 infinite;
+    -webkit-animation: 15s ease-in-out item1 infinite;
+    animation: 15s ease-in-out item1 infinite;
 }
 
 .item:nth-child(6):after {
@@ -321,8 +329,8 @@ a {
 
 .item:nth-child(8) {
     background-color: #999293;
-    -webkit-animation: 15s ease-in-out item2 infinite;
-    animation: 15s ease-in-out item2 infinite;
+    -webkit-animation: 15s ease-in-out item1 infinite;
+    animation: 15s ease-in-out item1 infinite;
 }
 
 .item:nth-child(8):after {
@@ -373,8 +381,8 @@ a {
 
 .item:nth-child(10) {
     background-color: #8D818C;
-    -webkit-animation: 15s ease-in-out item2 infinite;
-    animation: 15s ease-in-out item2 infinite;
+    -webkit-animation: 15s ease-in-out item1 infinite;
+    animation: 15s ease-in-out item1 infinite;
 }
 
 .item:nth-child(10):after {
@@ -425,8 +433,8 @@ a {
 
 .item:nth-child(12) {
     background-color: #9b7598;
-    -webkit-animation: 15s ease-in-out item2 infinite;
-    animation: 15s ease-in-out item2 infinite;
+    -webkit-animation: 15s ease-in-out item1 infinite;
+    animation: 15s ease-in-out item1 infinite;
 }
 
 .item:nth-child(12):after {
@@ -439,12 +447,365 @@ a {
     z-index: 3;
 }
 
-footer {
+
+/*********************************************************************
+************************** CATEGORIES ********************************
+**********************************************************************/
+
+main#categories {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    -ms-flex-pack: distribute;
+    justify-content: flex-start;
+    background: -o-radial-gradient(top, ellipse, #4d9f0c, transparent), -o-radial-gradient(bottom, ellipse, #e66465, transparent);
+    background: radial-gradient(ellipse at top, #4d9f0c, transparent), radial-gradient(ellipse at bottom, #e66465, transparent);
+    opacity: 95%;
+    -webkit-animation: 135s ease main infinite;
+    animation: 135s ease main infinite;
+}
+
+.item_cat {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    -webkit-box-pack: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+    width: 45%;
     height: 3em;
-    background-color: rgb(70, 69, 69);
-    opacity: 70%;
+    font-size: 1.3em;
+    text-align: center;
+    color: rgb(51, 26, 97);
+    padding: 3% 2% 3% 2%;
+    margin: 1.5%;
+    -webkit-box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, .2);
+    box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, .2);
+    border: 1px solid black;
+    border-radius: 1%;
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+    opacity: 95%;
     z-index: 1;
 }
+
+.item_cat:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .3);
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .3);
+    -webkit-filter: hue-rotate(180deg);
+    filter: hue-rotate(180deg);
+    opacity: 100%;
+    z-index: 2;
+}
+
+.item_cat:first-child {
+    background-color: #FEFFFE;
+    -webkit-animation: 15s ease-in-out item1 infinite;
+    animation: 15s ease-in-out item1 infinite;
+}
+
+.item_cat:first-child:after {
+    content: "MOCO interne";
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item_cat:nth-child(2) {
+    background-color: #FEFFFE;
+    -webkit-animation: 15s ease-in-out item1 infinite;
+    animation: 15s ease-in-out item1 infinite;
+}
+
+.item_cat:nth-child(2):after {
+    content: "MOCO interne";
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item_cat:nth-child(3) {
+    background-color: #FEFFFE;
+    -webkit-animation: 15s ease-in-out item1 infinite;
+    animation: 15s ease-in-out item1 infinite;
+}
+
+.item_cat:nth-child(3):after {
+    content: "MOCO interne";
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item_cat:nth-child(4) {
+    background-color: #9b9b9b;
+    -webkit-animation: 15s ease-in-out item2 infinite;
+    animation: 15s ease-in-out item2 infinite;
+}
+
+.item_cat:nth-child(4):after {
+    content: "MOCO externe";
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item_cat:nth-child(5) {
+    color: white;
+    background-color: #9b9b9b;
+    -webkit-animation: 15s ease-in-out item2 infinite;
+    animation: 15s ease-in-out item3 infinite;
+}
+
+.item_cat:nth-child(5):after {
+    content: "Sur le net";
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+
+/*********************************************************************
+**************************** PAGES ***********************************
+**********************************************************************/
+
+main#pages {
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    -ms-flex-pack: distribute;
+    justify-content: flex-start;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: -o-radial-gradient(top, ellipse, #4d9f0c, transparent), -o-radial-gradient(bottom, ellipse, #e66465, transparent);
+    background: radial-gradient(ellipse at top, #4d9f0c, transparent), radial-gradient(ellipse at bottom, #e66465, transparent);
+    opacity: 95%;
+    -webkit-animation: 135s ease main infinite;
+    animation: 135s ease main infinite;
+}
+
+h2.titre1:before {
+    content: "MOCO interne";
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8em;
+    color: rgb(48, 48, 48);
+    z-index: 2;
+}
+
+h2.titre2:before {
+    content: "MOCO interne";
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8em;
+    color: rgb(48, 48, 48);
+    z-index: 2;
+}
+
+h2.titre3:before {
+    content: "MOCO interne";
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8em;
+    color: rgb(48, 48, 48);
+    z-index: 2;
+}
+
+h2.titre4:before {
+    content: "MOCO externe";
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8em;
+    color: rgb(48, 48, 48);
+    z-index: 2;
+}
+
+h2.titre5:before {
+    content: "Proposition en ligne";
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8em;
+    color: rgb(48, 48, 48);
+    z-index: 2;
+}
+
+span.pourqui:before {
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolorem eligendi facere laudantium voluptatum tenetur assumenda accusantium voluptatibus, sit similique delectus dignissimos excepturi. Rerum, magni nostrum! Ea ipsum ipsa reiciendis!";
+}
+
+span.pourquoi:before {
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolorem eligendi facere laudantium voluptatum tenetur assumenda accusantium voluptatibus, sit similique delectus dignissimos excepturi. Rerum, magni nostrum! Ea ipsum ipsa reiciendis!";
+}
+
+span.comment:before {
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolorem eligendi facere laudantium voluptatum tenetur assumenda accusantium voluptatibus, sit similique delectus dignissimos excepturi. Rerum, magni nostrum! Ea ipsum ipsa reiciendis!";
+}
+
+span.bonasavoir:before {
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dolorem eligendi facere laudantium voluptatum tenetur assumenda accusantium voluptatibus, sit similique delectus dignissimos excepturi. Rerum, magni nostrum! Ea ipsum ipsa reiciendis!";
+}
+
+h2.contact:before {
+    content: "CONTACTS";
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8em;
+    color: rgb(48, 48, 48);
+    z-index: 2;
+}
+
+div#contact {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: space-around;
+    justify-content: space-around;
+}
+
+.item_page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    -webkit-box-pack: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+    width: 35%;
+    height: 3em;
+    font-size: 1.3em;
+    text-align: center;
+    color: rgb(51, 26, 97);
+    padding: 3% 2% 3% 2%;
+    margin: 1.5%;
+    -webkit-box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, .2);
+    box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, .2);
+    border: 1px solid black;
+    border-radius: 1%;
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
+    opacity: 95%;
+    z-index: 1;
+}
+
+.item_page:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .3);
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .3);
+    -webkit-filter: hue-rotate(180deg);
+    filter: hue-rotate(180deg);
+    opacity: 100%;
+    z-index: 2;
+}
+
+.item_page:first-child:before {
+    content: "Lien Site";
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.item_page:nth-child(2):before {
+    content: "Vidéo";
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.item_page:nth-child(3):before {
+    content: "Localisation";
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*********************************************************************
+**************************** MEDIAS **********************************
+**********************************************************************/
 
 @media screen and (max-width: 850px) {
     header {
@@ -551,6 +912,11 @@ footer {
         height: auto;
     }
 }
+
+
+/*********************************************************************
+************************** ANIMATIONS ********************************
+**********************************************************************/
 
 @-webkit-keyframes main {
     0% {
@@ -659,36 +1025,72 @@ footer {
 
 @-webkit-keyframes item2 {
     from {
-        background-color: #887586;
+        background-color: #d6d2d6;
     }
     25% {
-        background-color: #938A90;
+        background-color: #e0d8de;
     }
     50% {
-        background-color: #887586;
+        background-color: #d6d2d6;
     }
     75% {
-        background-color: #938A90;
+        background-color: #e0d8de;
     }
     to {
-        background-color: #887586;
+        background-color: #d6d2d6;
     }
 }
 
 @keyframes item2 {
     from {
-        background-color: #887586;
+        background-color: #d6d2d6;
     }
     25% {
-        background-color: #938A90;
+        background-color: #e0d8de;
     }
     50% {
-        background-color: #887586;
+        background-color: #d6d2d6;
     }
     75% {
-        background-color: #938A90;
+        background-color: #e0d8de;
     }
     to {
-        background-color: #887586;
+        background-color: #d6d2d6;
+    }
+}
+
+@-webkit-keyframes item3 {
+    from {
+        background-color: #333233;
+    }
+    25% {
+        background-color: #383737;
+    }
+    50% {
+        background-color: #333233;
+    }
+    75% {
+        background-color: #383737;
+    }
+    to {
+        background-color: #333233;
+    }
+}
+
+@keyframes item3 {
+    from {
+        background-color: #333233;
+    }
+    25% {
+        background-color: #383737;
+    }
+    50% {
+        background-color: #333233;
+    }
+    75% {
+        background-color: #383737;
+    }
+    to {
+        background-color: #333233;
     }
 }
