@@ -105,12 +105,12 @@ a {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    width: 14%;
+    width: 13%;
     height: auto;
     font-size: 1.3em;
     text-align: center;
     color: rgb(51, 26, 97);
-    padding: 3% 2% 3% 2%;
+    padding: 2% 3% 2% 3%;
     margin: 1.5%;
     -webkit-box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, .2);
     box-shadow: 6px 6px 2px 1px rgba(0, 0, 255, .2);
@@ -136,7 +136,7 @@ a {
 }
 
 .item:first-child:before {
-    content: url(img/home.png);
+    content: url(img/jobs.png);
     position: relative;
     left: 0;
     top: 0;
@@ -152,7 +152,7 @@ a {
 }
 
 .item:first-child:after {
-    content: "Logement";
+    content: "Formation professionnelle";
     position: relative;
     left: 0;
     top: 0;
@@ -162,7 +162,7 @@ a {
 }
 
 .item:nth-child(2):before {
-    content: url(img/sante.png);
+    content: url(img/crush.png);
     position: relative;
     left: 0;
     top: 0;
@@ -178,7 +178,7 @@ a {
 }
 
 .item:nth-child(2):after {
-    content: "Se soigner";
+    content: "Initiative et engagement";
     position: relative;
     left: 0;
     top: 0;
@@ -188,7 +188,7 @@ a {
 }
 
 .item:nth-child(3):before {
-    content: url(img/fetes.png);
+    content: url(img/sante.png);
     position: relative;
     left: 0;
     top: 0;
@@ -204,7 +204,7 @@ a {
 }
 
 .item:nth-child(3):after {
-    content: "S'amuser";
+    content: "Santé";
     position: relative;
     left: 0;
     top: 0;
@@ -214,7 +214,7 @@ a {
 }
 
 .item:nth-child(4):before {
-    content: url(img/sports.png);
+    content: url(img/home.png);
     position: relative;
     left: 0;
     top: 0;
@@ -230,7 +230,7 @@ a {
 }
 
 .item:nth-child(4):after {
-    content: "Faire du sport";
+    content: "Se loger";
     position: relative;
     left: 0;
     top: 0;
@@ -256,7 +256,7 @@ a {
 }
 
 .item:nth-child(5):after {
-    content: "Lire et apprendre";
+    content: "Aide et accompagnement";
     position: relative;
     left: 0;
     top: 0;
@@ -282,7 +282,7 @@ a {
 }
 
 .item:nth-child(6):after {
-    content: "Jeux et loisirs";
+    content: "Loisirs";
     position: relative;
     left: 0;
     top: 0;
@@ -292,7 +292,7 @@ a {
 }
 
 .item:nth-child(7):before {
-    content: url(img/jardiner.png);
+    content: url(img/voyages.png);
     position: relative;
     left: 0;
     top: 0;
@@ -308,7 +308,7 @@ a {
 }
 
 .item:nth-child(7):after {
-    content: "Jardiner";
+    content: "Se déplacer";
     position: relative;
     left: 0;
     top: 0;
@@ -318,7 +318,7 @@ a {
 }
 
 .item:nth-child(8):before {
-    content: url(img/construire.png);
+    content: url(img/etudes.png);
     position: relative;
     left: 0;
     top: 0;
@@ -334,7 +334,7 @@ a {
 }
 
 .item:nth-child(8):after {
-    content: "Faire soi-même";
+    content: "Etudes supérieures";
     position: relative;
     left: 0;
     top: 0;
@@ -344,7 +344,7 @@ a {
 }
 
 .item:nth-child(9):before {
-    content: url(img/shopping.png);
+    content: url(img/college.png);
     position: relative;
     left: 0;
     top: 0;
@@ -360,7 +360,7 @@ a {
 }
 
 .item:nth-child(9):after {
-    content: "Faire du shopping";
+    content: "Collèges et lycées";
     position: relative;
     left: 0;
     top: 0;
@@ -370,7 +370,7 @@ a {
 }
 
 .item:nth-child(10):before {
-    content: url(img/jobs.png);
+    content: url(img/droits.png);
     position: relative;
     left: 0;
     top: 0;
@@ -386,59 +386,7 @@ a {
 }
 
 .item:nth-child(10):after {
-    content: "Trouver un job";
-    position: relative;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 3;
-}
-
-.item:nth-child(11):before {
-    content: url(img/crush.png);
-    position: relative;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 3;
-}
-
-.item:nth-child(11) {
-    background-color: #887586;
-    -webkit-animation: 15s ease-in-out item1 infinite;
-    animation: 15s ease-in-out item1 infinite;
-}
-
-.item:nth-child(11):after {
-    content: "Faire des rencontres";
-    position: relative;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 3;
-}
-
-.item:nth-child(12):before {
-    content: url(img/voyages.png);
-    position: relative;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 3;
-}
-
-.item:nth-child(12) {
-    background-color: #9b7598;
-    -webkit-animation: 15s ease-in-out item1 infinite;
-    animation: 15s ease-in-out item1 infinite;
-}
-
-.item:nth-child(12):after {
-    content: "Voyager";
+    content: "Droits";
     position: relative;
     left: 0;
     top: 0;
@@ -859,7 +807,7 @@ div#contact {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        width: 25%;
+        width: 40%;
         height: auto;
     }
 }
@@ -912,7 +860,8 @@ div#contact {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        width: 43%;
+        width: 35%;
+        font-size: 0.6em;
         height: auto;
     }
 }
