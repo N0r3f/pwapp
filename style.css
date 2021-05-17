@@ -178,7 +178,7 @@ a {
 }
 
 .item:nth-child(2):after {
-    content: "Initiative et engagement";
+    content: "Initiatives et engagement";
     position: relative;
     left: 0;
     top: 0;
@@ -256,7 +256,7 @@ a {
 }
 
 .item:nth-child(5):after {
-    content: "Aide et accompagnement";
+    content: "Aides et accompagnement";
     position: relative;
     left: 0;
     top: 0;
