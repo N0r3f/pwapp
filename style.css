@@ -136,8 +136,9 @@ a {
 }
 
 .item:first-child:before {
-    content: url(img/jobs.png);
+    content: url(img/formation.png);
     position: relative;
+    transform: scale(1.5);
     left: 0;
     top: 0;
     right: 0;
@@ -152,7 +153,7 @@ a {
 }
 
 .item:first-child:after {
-    content: "Formation professionnelle";
+    content: "Je voudrais suivre une formation.";
     position: relative;
     left: 0;
     top: 0;
@@ -178,7 +179,7 @@ a {
 }
 
 .item:nth-child(2):after {
-    content: "Initiatives et engagement";
+    content: "J'ai des idées et des envies, comment créer ou rejoindre un projet ?";
     position: relative;
     left: 0;
     top: 0;
@@ -204,7 +205,7 @@ a {
 }
 
 .item:nth-child(3):after {
-    content: "Santé";
+    content: "Où aller pour me soigner ?";
     position: relative;
     left: 0;
     top: 0;
@@ -230,7 +231,7 @@ a {
 }
 
 .item:nth-child(4):after {
-    content: "Se loger";
+    content: "Comment trouver un logement ?";
     position: relative;
     left: 0;
     top: 0;
@@ -256,7 +257,7 @@ a {
 }
 
 .item:nth-child(5):after {
-    content: "Aides et accompagnement";
+    content: "Qui peut m'aider ? J'aimerais être accompagné.";
     position: relative;
     left: 0;
     top: 0;
@@ -282,7 +283,7 @@ a {
 }
 
 .item:nth-child(6):after {
-    content: "Loisirs";
+    content: "Quelles sont les offres de loisirs ?";
     position: relative;
     left: 0;
     top: 0;
@@ -308,7 +309,7 @@ a {
 }
 
 .item:nth-child(7):after {
-    content: "Se déplacer";
+    content: "Comment se déplacer ?";
     position: relative;
     left: 0;
     top: 0;
@@ -334,7 +335,7 @@ a {
 }
 
 .item:nth-child(8):after {
-    content: "Etudes supérieures";
+    content: "Je voudrais faire des études supérieures.";
     position: relative;
     left: 0;
     top: 0;
@@ -360,7 +361,7 @@ a {
 }
 
 .item:nth-child(9):after {
-    content: "Collèges et lycées";
+    content: "Quels sont les collèges et lycées ?";
     position: relative;
     left: 0;
     top: 0;
@@ -386,7 +387,60 @@ a {
 }
 
 .item:nth-child(10):after {
-    content: "Droits";
+    content: "Je voudrais connaître mes droits.";
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:nth-child(11):before {
+    content: url(img/jobs.png);
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:nth-child(11) {
+    background-color: #FEFFFE;
+    -webkit-animation: 15s ease-in-out item1 infinite;
+    animation: 15s ease-in-out item1 infinite;
+}
+
+.item:nth-child(11):after {
+    content: "Comment trouver un emploi ?";
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:nth-child(12):before {
+    content: url(img/connexion.png);
+    position: relative;
+    transform: scale(1.5);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.item:nth-child(12) {
+    background-color: #FEFFFE;
+    -webkit-animation: 15s ease-in-out item1 infinite;
+    animation: 15s ease-in-out item1 infinite;
+}
+
+.item:nth-child(12):after {
+    content: "Où me connecter ?";
     position: relative;
     left: 0;
     top: 0;
